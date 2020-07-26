@@ -39,6 +39,7 @@ const icons = {
 const Routes: React.FC = () => {
   return (
     <Tab.Navigator
+      initialRouteName="Wallet"
       screenOptions={({ route, navigation }) => ({
         tabBarIcon: ({ size, color, focused }) => {
           if (route.name == "Pay")
